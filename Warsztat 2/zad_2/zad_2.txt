@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie_2</title>
+</head>
+<body>
+<header>
+    <h1>Zadanie 2</h1>
+    <nav>
+        <ul>
+            <li><a href="#audio">Osadzanie dodatkowych elementów - audio</a></li>
+            <li><a href="#hints"> Wskazowki</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="audio">
+        <h2>Audio</h2>
+        <p>Jeśli znamy przykład znaczników video, wiemy już, jak dodać dźwięk do strony. Element audio wykorzystuje te same atrybuty, co element video, z wyjątkiem width, height i poster (ponieważ nie ma nic do wyświetlenia). Podobnie jak w przypadku elementu video, możemy udostępnić stos opcji formatu audio za pomocą elementu źródłowego, jak pokazano w poniższym przykładzie. </p>
+    </section>
+
+    <section id="hints">
+        <h3> wskazowki</h3>
+        <p>audio src="audio/sample1.ogg" autoplay loop</audio></p>
+    </section>
+</main>
+
+<footer>
+    <p>stopka strony ©</p>
+</footer>
+</body>
+</html>
