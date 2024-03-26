@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie_5</title>
+    <style>
+        body {
+            background-color: black;
+        }
+        h1 {
+            color: gray;
+        }
+        .box {
+            width: 500px;
+            height: 500px;
+        }
+    </style>
+</head>
+<body>
+<h1>My boxes</h1>
+<div class="box" style="background-color: red">
+    <p>Box 1</p>
+</div>
+<div class="box" style="background-color: blue;">
+    <p>Box 2</p>
+</div>
+</body>
+</html>
