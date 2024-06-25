@@ -1,0 +1,43 @@
+
+
+.specialists-body {
+    margin-top: 3cm;
+}
+
+.specialist-container {
+    border: 2px solid #ddd;
+    border-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.specialist-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.specialist-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.specialist-row img {
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.specialist-info {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
