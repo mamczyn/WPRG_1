@@ -1,0 +1,74 @@
+body {
+    padding-top: 150px;
+}
+
+body::after {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+iframe {
+    margin-right: -50%;
+    width: 100%;
+    height: 300px;
+}
+
+h1 {
+    color: white;
+    font-size: 3em;
+}
+
+h2, h3, h4, p {
+    color: white;
+}
+
+
+
+.specialists-body {
+    margin-top: 3cm;
+}
+
+.specialist-container {
+    border: 2px solid #ddd;
+    border-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.specialist-row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.specialist-row:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.specialist-row img {
+    width: 200px;
+    height: auto;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+
+.specialist-info {
+    flex-grow: 1;
+}
+
+.title {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 20px;
+}
