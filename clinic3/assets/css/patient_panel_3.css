@@ -1,0 +1,21 @@
+body {
+    background-color: #f8f9fa;
+    margin-top: 3cm;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.card-title {
+    margin-bottom: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+#calendar {
+    max-width: 900px;
+    margin: 0 auto;
+}

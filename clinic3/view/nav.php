@@ -1,0 +1,67 @@
+<div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <?php if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] == false) : ?>
+            <li class="nav-item">
+                <a class="nav-link" href="specialists.php">Specjaliści</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="prices.php">Cennik</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php#news">Aktualności</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.php">Jak Dojechać</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="btn btn-light dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Logowanie
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="login.php">Dla Pacjentów</a>
+                    <a class="dropdown-item" href="login2.php">Dla Personelu</a>
+                </div>
+        <?php else : ?>
+
+            <li class="nav-item">
+                <a class="nav-link" href="specialists.php">Nasi Specjaliści</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="prices.php">Cennik</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.php#news">Aktualności</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="contact.php">Jak Dojechaćć</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="forum.php">Forum</a>
+            </li>
+            <li class="nav-item">
+                <?php
+                if (isset($_SESSION['role'])) {
+                    switch ($_SESSION['role']) {
+                        case 'administrator':
+                            echo '<a class="dropdown-item" href="admin_panel.php">Panel Administratora</a>';
+                            break;
+                        case 'patient':
+                            echo '<a class="dropdown-item" href="../view/appointments.php">Panel Pacjenta</a>';
+                            break;
+                        case 'dentist':
+                            echo '<a class="dropdown-item" href="../view/doctor_panell.php">Panel Pracowników</a>';
+                            break;
+                    }
+                }
+                ?>
+            </li>
+        <?php endif; ?>
+    </ul>
+<span class="nav-item">
+        <?php
+        if (isset($_SESSION['loggedin']) && $_SESSION['loggedin']) {
+            echo '<a class="btn btn-light" href="../users/logout.php">Wyloguj</a>';
+        }
+        ?>
+    </span>
+</div>
